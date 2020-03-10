@@ -1,0 +1,71 @@
+{
+  "name": "masterclass-report-template",
+  "version": "1.0.0",
+  "description": "This is the template for the masterclass session of pushcon",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack/dev.babel.js",
+    "build": "webpack -p --config ./webpack/prod.babel.js",
+    "build:staging": "webpack -p --config ./webpack/staging.babel.js",
+    "fix:eslint": "eslint --fix --ext .jsx,.js ./src ./webpack"
+  },
+  "author": "Tobit.Software",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-react-constant-elements": "^7.8.3",
+    "@babel/plugin-transform-react-inline-elements": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.8.6",
+    "@hot-loader/react-dom": "^16.12.0",
+    "autoprefixer": "^9.7.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-imports": "^1.5.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react-hot-loader": "^4.12.19",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "chayns-components": "^4.14.7",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TobitSoftware/masterclass-report-template.git"
+  },
+  "keywords": [
+    "chayns",
+    "react",
+    "masterclass",
+    "report",
+    "template"
+  ]
+}
